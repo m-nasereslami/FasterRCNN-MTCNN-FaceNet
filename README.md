@@ -1,5 +1,13 @@
 # Object-Face-Detection-Recognition
 
+## Contents
+- [Overview](#overview)
+- [Repository Structure](#repository-structure)
+- [Features](#features)
+- [Setup](#setup)
+- [Usage](#usage)
+- [Acknowledgements](#acknowledgements)
+
 ## Overview
 This project combines Faster R-CNN, MTCNN, and FaceNet to perform multi-stage object detection and face recognition. The pipeline follows these steps:
 1. **Faster R-CNN** detects objects (people and dogs) in an image.
@@ -49,7 +57,7 @@ This project combines Faster R-CNN, MTCNN, and FaceNet to perform multi-stage ob
 - **Face Recognition**: Uses FaceNet embeddings to recognize known individuals.
 - **Efficient Pipeline**: Runs MTCNN and FaceNet only on relevant regions to improve speed.
 
-## Installation
+## Setup
 1. Clone the repository:
    ```bash
    git clone https://github.com/Ariobarzanes98/FasterRCNN-MTCNN-FaceNet.git
@@ -66,10 +74,17 @@ This project combines Faster R-CNN, MTCNN, and FaceNet to perform multi-stage ob
    pip install -r requirements.txt
    ```
 
-4. Download the Pascal VOC 2012 dataset (VOCtrainval_11-May-2012) and place it inside the `data/` folder.
-
 ## Usage
 
-- [Train Faster R-CNN](train_faster_rcnn/) – Set up and train the object detection model.
-- [Encode Faces with FaceNet](encode_faces/) – Process and store face embeddings for recognition.
 - [Run the Full Detection Pipeline](hierarchical_detection/) – Perform object detection with Faster R-CNN, apply face detection using MTCNN on detected people, and recognize faces with FaceNet in a sequential pipeline.
+- [Encode Faces with FaceNet](encode_faces/) – If you want to generate and use your own face embeddings instead of the existing ones, follow this guide to process and store embeddings for recognition.
+- [Train Faster R-CNN](train_faster_rcnn/) – If you want to train the object detection model instead of using the provided pre-trained weights, follow the instructions in this section.
+
+
+## Acknowledgements
+
+This implementation is based on code from several repositories:
+
+- [Faster RCNN Webinar](https://github.com/howsam/faster-rcnn)
+- [Face tutorial](https://github.com/pooya-mohammadi/Face)
+
