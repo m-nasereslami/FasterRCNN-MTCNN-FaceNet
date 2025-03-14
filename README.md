@@ -1,5 +1,9 @@
 # Object-Face-Detection-Recognition
 
+<p align="center">
+  <img src="hierarchical_detection/test_result.jpg" alt="Detection Result" width="450" height="auto">
+</p>
+
 ## Contents
 - [Overview](#overview)
 - [Repository Structure](#repository-structure)
