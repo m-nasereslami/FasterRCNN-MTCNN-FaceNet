@@ -64,7 +64,7 @@ This project combines Faster R-CNN, MTCNN, and FaceNet to perform multi-stage ob
 ## Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Ariobarzanes98/FasterRCNN-MTCNN-FaceNet.git
+   git clone https://github.com/m-nasereslami/FasterRCNN-MTCNN-FaceNet.git
    cd Object-Face-Detection-Recognition
    ```
 2. Create and activate a Conda environment with Python 3.9:
